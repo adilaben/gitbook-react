@@ -1,0 +1,19 @@
+.footer {
+  padding-block-start: 16px;
+  border-block-start: 1px solid var(--outline);
+  margin-block-start: 16px;
+}
+
+.copyright {
+  color: var(--on-surface-2);
+}
+
+.footer .text-primary {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  footer.footer {
+    display: none;
+  }
+}

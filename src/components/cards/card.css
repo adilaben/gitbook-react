@@ -1,0 +1,87 @@
+.card {
+  --spacing: 16px;
+  background-color: var(--surface);
+  border-radius: var(--radius-12);
+  overflow: hidden;
+}
+
+.card :where(.card-body, .card-footer) {
+  padding: var(--spacing);
+}
+
+.follower-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+.follower-card .avatar-circle {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.follower-card .icon-btn {
+  margin-inline-start: auto;
+}
+
+.follower-card .card-title {
+  font-size: var(--body);
+  font-weight: var(--weight-regular);
+}
+
+.repo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.repo-card .card-body {
+  flex-grow: 1;
+}
+
+.repo-card .card-title {
+  max-width: max-content;
+  padding-inline-end: 76px;
+  transition: var(--transition-short);
+}
+
+.repo-card .card-title:where(:hover, :focus-visible) {
+  color: var(--primary);
+}
+
+.repo-card .card-text {
+  color: var(--on-surface-variant);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  -webkit-line-clamp: 2;
+  margin-block-start: 8px;
+}
+
+.repo-card .badge {
+  position: absolute;
+  top: var(--spacing);
+  right: var(--spacing);
+}
+
+.repo-card .card-footer {
+  background-color: var(--surface-variant);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+}
+
+.repo-card .meta-item {
+  color: var(--on-surface);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    --spacing: 24px;
+  }
+}

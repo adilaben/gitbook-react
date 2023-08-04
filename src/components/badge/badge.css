@@ -1,0 +1,13 @@
+.badge {
+  background-color: var(--surface-variant);
+  color: var(--alpha-60);
+  max-width: max-content;
+  font-size: var(--label-2);
+  font-weight: var(--weight-semiBold);
+  text-transform: uppercase;
+  height: 24px;
+  line-height: 24px;
+  padding-inline: 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--surface-variant-outline);
+}
