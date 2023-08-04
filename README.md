@@ -1,6 +1,6 @@
 # GitBook
 
-This is a GitBook application that allows you to find GitHub user information. It is built using HTML, CSS, JavaScript, and the GitHub API.
+This is a GitBook application that allows you to find GitHub user information. It is built using React JS, and the GitHub API.
 
 ## Features
 
